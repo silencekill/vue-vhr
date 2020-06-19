@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7ec8473-7c1e-4468-970f-cab216aa1b8c" name="Default Changelist" comment="" />
+    <list default="true" id="f7ec8473-7c1e-4468-970f-cab216aa1b8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/f94b8e04c32dd4d45459cf49bdfc4205.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/f94b8e04c32dd4d45459cf49bdfc4205.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZpcHRIYTZO2iR0CIWEoIUNIKM4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -66,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585539387233</updated>
       <workItem from="1585539390815" duration="6330000" />
-      <workItem from="1592573657445" duration="829000" />
+      <workItem from="1592573657445" duration="2372000" />
     </task>
     <servers />
   </component>
@@ -154,5 +159,17 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="339" y="56" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1585571382978" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/Login.vue</url>
+          <line>54</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

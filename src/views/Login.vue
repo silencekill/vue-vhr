@@ -49,6 +49,7 @@
                 this.$refs.loginForm.validate((valid) => {
                     if (valid) {
                         alert('submit!');
+
                     } else {
                         //提示错误信息
                         this.$message.error('请输入完整字段');
