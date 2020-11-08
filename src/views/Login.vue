@@ -22,6 +22,9 @@
 </template>
 
 <script>
+    // 没有将封装的请求做成插件前需要在使用的地方import 再使用
+    // 封装后直接this.
+    //import {postKeyValueRequest} from '../utils/api.js'
     export default {
         name: "login",
         data(){
@@ -48,8 +51,18 @@
                 // .validate 验证数据
                 this.$refs.loginForm.validate((valid) => {
                     if (valid) {
-                        alert('submit!');
-
+                        // 使用封装后的请求函数
+                        this.postKeyValueRequest("/doLogin",this.loginForm).then(resp=>{
+                            // 这里then是封装处理过的返回结果
+                            if(resp){
+                                // 将信息存入到sessionStorage
+                                window.sessionStorage.setItem("user",JSON.stringify(resp.data));
+                                //alert(JSON.stringify(resp))
+                                // 页面跳转(两种方式)
+                                //this.$router.push();
+                                this.$router.replace("/home");
+                            }
+                        })
                     } else {
                         //提示错误信息
                         this.$message.error('请输入完整字段');
@@ -58,7 +71,6 @@
                 })
             }
         }
-
     }
 </script>
 
@@ -67,7 +79,7 @@
         border: 1px solid #eaeaea;
         border-radius: 15px;
         background-clip: padding-box;
-        margin: 220px auto;
+        margin: 200px auto;
         width: 300px;
         padding: 35px 35px 15px 35px;
         background: #fff;
